@@ -1,3 +1,6 @@
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+
 # Requirements
 
 The goal of these requirements is to ensure that the applications hosted on Flathub are safe to use
@@ -27,6 +30,87 @@ The manifest must be at the top level and named after the application ID with th
 Every repository must contain a manifest describing how to build the application. If the application, and hence repository, is called `com.example.MyCoolApp`, this file must be called `com.example.MyCoolApp.json` or `com.example.MyCoolApp.yaml`. This is the only required file!
 
 This manifest may import other manifest files in the same repository. It's quite common to add the [shared-modules](shared-modules) repository as a submodule.
+
+#### Example manifest
+
+This assumes that upstream brings appdata, icons and desktop files. If not, you can add them yourself.
+
+<Tabs groupId="manifest-language" defaultValue="json" queryString>
+  <TabItem value="json" label="json" default>
+
+```json title="io.github.example.MyCoolApp.json"
+{
+  "app-id": "io.github.example.MyCoolApp",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "44",
+  "sdk": "org.gnome.Sdk",
+  "command": "mycoolapp",
+  "finish-args": [
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--socket=pulseaudio",
+    "--share=network",
+    "--share=ipc"
+  ],
+  "modules": [
+    {
+      "name": "mycoolapp",
+      "buildsystem": "simple",
+      "build-commands": [
+        "install -Dm644 mycoolapp/io.github.example.MyCoolApp.appdata.xml /app/share/appdata/io.github.example.MyCoolApp.appdata.xml",
+        "install -Dm644 mycoolapp/mycoolapp-logo.png /app/share/icons/hicolor/128x128/apps/io.github.example.MyCoolApp.png",
+        "install -Dm644 mycoolapp/mycoolapp.desktop /app/share/applications/io.github.example.MyCoolApp.desktop",
+        "install -dm755 /app/bin /app/mycoolapp",
+        "cp -R mycoolapp/ /app",
+        "ln -s /app/mycoolapp/mycoolapp /app/bin/mycoolapp"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/example/mycoolapp/releases/download/v1.0.0/mycoolapp-source-1.0.0.tar.xz",
+          "dest": "mycoolapp",
+          "sha256": "e198214acdbb57363561dee2d73f27199999af26c283723067525bd854703e12"
+        }
+      ]
+    }
+  ]
+}
+```
+
+  </TabItem>
+  <TabItem value="yml" label="yml">
+
+```yml title="io.github.example.MyCoolApp.yml"
+app-id: io.github.example.MyCoolApp
+runtime: org.gnome.Platform
+runtime-version: "44"
+sdk: org.gnome.Sdk
+command: mycoolapp
+finish-args:
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --share=ipc
+modules:
+  - name: mycoolapp
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 mycoolapp/io.github.example.MyCoolApp.appdata.xml /app/share/appdata/io.github.example.MyCoolApp.appdata.xml
+      - install -Dm644 mycoolapp/mycoolapp-logo.png /app/share/icons/hicolor/128x128/apps/io.github.example.MyCoolApp.png
+      - install -Dm644 mycoolapp/mycoolapp.desktop /app/share/applications/io.github.example.MyCoolApp.desktop
+      - install -dm755 /app/bin /app/mycoolapp
+      - cp -R mycoolapp/ /app
+      - ln -s /app/mycoolapp/mycoolapp /app/bin/mycoolapp
+    sources:
+      - type: archive
+        url: https://github.com/example/mycoolapp/releases/download/v1.0.0/mycoolapp-source-1.0.0.tar.xz
+        dest: mycoolapp
+        sha256: e198214acdbb57363561dee2d73f27199999af26c283723067525bd854703e12
+```
+
+  </TabItem>
+</Tabs>
 
 ### Optional
 
