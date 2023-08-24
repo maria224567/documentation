@@ -1,41 +1,30 @@
-# Submission
+Here are seven foods and drinks that can help you feel better and less stressed.
+In the fast-paced world we live in now, stress is something we all have to deal with. Trying to balance work, family obligations, and the steady flow of knowledge can be hard on our minds. There are many ways to deal with stress, but did you know that what you eat and drink can make a big difference in how you feel and how much stress you feel?
 
-## How to submit an app
+PREGABALIN 50 MG CAPSULE includes Pregabalin, which belongs to the Anticonvulsant medication class. It is used to alleviate neuropathic pain in adults. Neuropathic pain (also known as nerve pain) is a chronic pain produced by nerve fiber injury in the body. It is distinguished by scorching, searing, sharp, shooting, throbbing, or stabbing pain sensations, as well as tingling or numbness in various body areas. If nerve fibers feeding the brain are injured, it may also cause mood changes, sleep difficulties, and fatigue
 
-App submissions are extremely welcome and the process is straightforward. Before submitting an app for inclusion on Flathub, please follow the [requirements](/docs/for-app-authors/requirements) to ensure that it is technically and legally compatible with the Flathub service. Once this has been done, you can submit the app for inclusion.
+Dark chocolate is a treat that can make you feel better.
+Dark chocolate isn't just a tasty treat; it can also help you deal with stress in a big way. Dark chocolate, which is high in flavonoids and other antioxidants, has been shown by science to lower the amount of stress hormones in the body. Also, it makes endorphins, which are chemicals that naturally make you feel better, come out. For the most health benefits, choose dark chocolate with more cocoa.
 
-Flathub is managed through a GitHub project, and app submissions take place as pull requests. To submit an app:
+2. Drink relaxing herbal teas, which come from nature.
+Herbal drinks are often the best choice when you want a cup of warmth. Teas made from chamomile, lavender, and lemon balm are known for how well they help calm people down. They have chemicals in them that work with receptors in the brain to help people relax and feel less anxious. At the end of a busy day, making a nice cup of herbal tea can be a great way to relax.
 
-1. Fork the [Flathub repository on GitHub](https://github.com/flathub/flathub/fork) with _"Copy the master branch only"_ unchecked.
-1. Clone the fork:
-   ```bash
-   git clone --branch=new-pr git@github.com:your_github_username/flathub.git
-   ```
-1. Switch into the cloned repository:
-   ```bash
-   cd flathub
-   ```
-1. Create a new branch with your app’s name:
-   ```bash
-   git checkout -b your_app_name
-   ```
-   The name of the branch has no incidence on the submission and at no point in the submission will you need to change it. Doing so will make github close the Pull Request.
-1. Add your app’s manifest to the branch, commit it and push the commit
-1. Open a pull request against the `new-pr` branch on GitHub. Please make sure to title the Pull Request with the name of the application. Example "Add org.example.MyAwesomeApp".
-1. Your pull request will then be reviewed by the Flathub reviewers. Keep in mind that the reviewers are volunteers.
+PREGALIN 50 MG CAPSULE includes Pregabalin, which belongs to the Anticonvulsant medication class. It is used to alleviate neuropathic pain in adults. Neuropathic pain (also known as nerve pain) is a chronic pain produced by nerve fiber injury in the body. It is distinguished by scorching, searing, sharp, shooting, throbbing, or stabbing pain sensations, as well as tingling or numbness in various body areas. If nerve fibers feeding the brain are injured, it may also cause mood changes, sleep difficulties, and fatigue.
 
-Once your pull request has been approved, a new repository will be created for your application, containing your app’s Flatpak manifest. You will receive an invitation to have write access for the repository, please make sure to accept it before it expires. Don't hesitate to [contact us](#getting-help) if it did. The Flathub service then uses the manifest from your repository to continuously build and distribute your application on every commit.
+3. Eat fatty fish: Omega-3s are good for your brain
+Omega-3 fatty acids are important for brain health and are found in fatty fish like salmon, mackerel, and trout. These fatty acids are very important for lowering inflammation in the brain, which improves happiness and brain function. Regularly eating fatty fish can help keep your mood steady and make you feel better.
 
-## Someone else has put my app on Flathub—what do I do?
+4. Go Bananas for Bananas: Natural Ways to Control Stress
+Bananas are not only a quick snack, but they can also help relieve stress. They have a lot of potassium, which helps keep blood pressure under control and lessens the effects of worry on the body. Also, bananas have tryptophan, which is a building block for serotonin, a chemical that makes you feel happy and well.
 
-Flathub is primarily intended as a service that is used by app developers to distribute their apps. Our goal is to give developers control of their apps and to allow them a closer relationship with their users without middlemen getting in the way. However, as part of setting up Flathub, some applications are being distributed on Flathub without the involvement of their developers. We would prefer that these applications are controlled by their authors.
+5. Eat nutrient-rich spinach: It's the green that makes you feel good
+Spinach, Popeye's favorite food, is full of nutrients and can make you feel better. Spinach is full of magnesium, folate, and other important nutrients. These help the body make serotonin and dopamine, which are mood-regulating chemicals. Adding spinach to your food is a tasty way to take care of your mental health.
 
-If an application that belongs to you is being distributed without your involvement, please get in touch with [the Flathub admins](mailto:flathub@lists.freedesktop.org), so that we can discuss transfering ownership.
+6. Enjoy complex carbs for long-lasting energy and a better mood
+Complex carbohydrates, which are found in whole grains like oats, quinoa, and brown rice, are great for giving you long-lasting energy and also help your body make serotonin. Serotonin, which is often called the "feel-good" chemical, helps keep your mood stable and good. By choosing whole grains, you give your body the building blocks it needs for your brain to work at its best.
 
-## There’s an app that I’d like to see on Flathub, but I’m not the developer
+7. Drink herbal teas to stay hydrated: calming hydration
+Staying hydrated is one of the most important things you can do to keep your health in good shape, and some plant drinks can take water to a whole new level. Think about putting pieces of cucumber, mint leaves, and a little bit of lemon in your water. Cucumber has chemicals that help reduce inflammation, mint has a fresh smell that can calm the senses, and lemon has vitamin C, which is known to help reduce stress.
 
-If there’s an app that you'd like to be distributed on Flathub, the best first course of action is to approach the app’s developers and ask them to submit it. Remember that for some projects or communities, this may be the first that they have heard of the Flatpak technology or interacted with somebody who advocates it. When you are making such requests, please be aware that the people you are talking to may be forming their first impressions of Flatpak as a technology and a community. Always remain respectful, patient and courteous even if you face skepticism or dissenting opinions. You can also start a topic on the [Flathub forum](https://discourse.flathub.org/c/requests/5) to find whether others are interested in using, helping to build or advocate for the app in Flatpak format.
-
-## Getting help
-
-If you are unsure about the process of submitting an app to Flathub, or are experiencing issues fulfilling all the requirements, you can contact the Flatpak community for help. General queries can be made on community channels, such as the [matrix channel](https://matrix.to/#/#flatpak:matrix.org) and [discourse](https://discourse.flathub.org/). For more sensitive issues, please use the private Flathub admins mailing list.
+In the end,
+Adding these foods and drinks that help relieve stress to your daily routine can make a big difference in how you deal with stress and how your mood is. Remember that a complete approach to health includes both what you eat and how you take care of your body and mind. By putting these foods at the top of your list, you're taking a step toward a happy and better life.
